@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/name">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SIGN-UP"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="UserName"
+        android:ems="10"
+        android:id="@+id/Username"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignLeft="@+id/textView6"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_alignRight="@+id/Signup_button"
+        android:layout_alignEnd="@+id/Signup_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="phone no."
+        android:id="@+id/phone"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/Username"
+        android:layout_alignLeft="@+id/Username"
+        android:layout_alignStart="@+id/Username"
+        android:layout_alignRight="@+id/Username"
+        android:layout_alignEnd="@+id/Username" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="password"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:layout_alignRight="@+id/phone"
+        android:layout_alignEnd="@+id/phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="_______________________________"
+        android:id="@+id/textView6"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="37dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="74dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lets get started."
+        android:id="@+id/Signup_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:onClick="addOnClick"
+        android:background="#16e3b3" />
+
+</RelativeLayout>
+
